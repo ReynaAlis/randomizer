@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рандомайзер</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="randomizer">
+
+            <span class="show-number">random</span>
+
+            <form class="form" action="#">
+                <label aria-label="Минимальное число">
+                    <input class="field field-min" type="number" min="1" max="999" step="1" placeholder="1" value="1">
+                </label>
+
+                <label aria-label="Максимальное число">
+                    <input class="field field-max" type="number" min="2" max="999" step="1" placeholder="1" value="100">
+                </label>
+
+                <button class="random-button" type="submit">generate</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/main.js" defer type="module"></script>
+</body>
+
+</html>

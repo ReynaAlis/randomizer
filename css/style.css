@@ -1,0 +1,90 @@
+/* Общие стили для всей страницы */
+body {
+    max-height: 100vh;
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    background-color: #accbee;
+}
+
+/* Стили для контейнера .container */
+.container {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Добавляем отображение по центру контейнера */
+    position: relative;
+    /* Добавляем позиционирование контейнера */
+}
+
+/* Стили для секции .randomizer */
+.randomizer {
+    width: 400px;
+    z-index: 1;
+    text-align: center;
+    padding: 50px;
+    /* Убираем position: absolute и bottom */
+}
+
+/* Стили для формы .form */
+.form {
+    width: 100%;
+    /* Занимает всю доступную ширину .randomizer */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    /* Выравниваем по центру */
+}
+
+/* Стили для .show-number */
+.show-number {
+    font-size: 100px;
+    line-height: 1.5;
+}
+
+/* Стили для .field */
+.field {
+    max-width: 100%;
+    /* Максимальная ширина - 100% от родительского контейнера */
+    flex: 1;
+    /* Равномерное распределение доступного места внутри .form */
+}
+
+/* Стили для кнопки .random-button */
+.random-button {
+    max-width: 100%;
+    /* Максимальная ширина - 100% от родительского контейнера */
+    background-color: #76e0e6;
+}
+
+/* Общие стили для .container, .field и .random-button */
+.container, .field, .random-button {
+    border-radius: 8px;
+    color: rgb(136, 77, 230);
+}
+
+/* Общие стили для .field и .random-button */
+.field, .random-button {
+    height: 50px;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+}
+
+/* Медиазапрос для экранов с шириной до 576px */
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .show-number {
+        font-size: 60px;
+    }
+}
