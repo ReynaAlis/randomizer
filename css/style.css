@@ -4,7 +4,7 @@ body {
     font-family: sans-serif;
     font-size: 20px;
     line-height: 1.5;
-    background-color: #accbee;
+    background-color: #afd0f9;
 }
 
 /* Стили для контейнера .container */
@@ -16,9 +16,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Добавляем отображение по центру контейнера */
     position: relative;
-    /* Добавляем позиционирование контейнера */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* Стили для секции .randomizer */
@@ -27,7 +26,6 @@ body {
     z-index: 1;
     text-align: center;
     padding: 50px;
-    /* Убираем position: absolute и bottom */
 }
 
 /* Стили для формы .form */
@@ -38,7 +36,6 @@ body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    /* Выравниваем по центру */
 }
 
 /* Стили для .show-number */
@@ -53,19 +50,27 @@ body {
     /* Максимальная ширина - 100% от родительского контейнера */
     flex: 1;
     /* Равномерное распределение доступного места внутри .form */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.15);
+
 }
 
 /* Стили для кнопки .random-button */
 .random-button {
     max-width: 100%;
     /* Максимальная ширина - 100% от родительского контейнера */
-    background-color: #76e0e6;
+    background-color: #81f9ff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.random-button:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 /* Общие стили для .container, .field и .random-button */
 .container, .field, .random-button {
     border-radius: 8px;
-    color: rgb(136, 77, 230);
+    color: rgb(149, 98, 231);
 }
 
 /* Общие стили для .field и .random-button */
