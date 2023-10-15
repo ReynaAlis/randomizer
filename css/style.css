@@ -51,7 +51,10 @@ body {
     flex: 1;
     /* Равномерное распределение доступного места внутри .form */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
+.field:focus {
+    outline: 2px solid rgb(148, 106, 215);
 }
 
 /* Стили для кнопки .random-button */
